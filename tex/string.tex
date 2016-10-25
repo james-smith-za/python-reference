@@ -1,0 +1,13 @@
+\chapter{Strings and numbers}
+
+There is lots of occasion to work with strings!
+
+\section{Stripping non-numeric characters from a string}
+
+If you're importing strings from a text file, but someone has mixed other things which aren't numbers in with the strings.
+\lstinputlisting{src/non-numeric-strip.py} %chktex 11
+This uses Python's list filtering. This is a very simple thing which doesn't require importing any additional modules such as \code{re}. This will only work for positive integers (TODO: verify this). If you've got negative numbers and points / commas, these are not digits, so won't get in.%chktex 13
+
+Reference:
+\url{http://stackoverflow.com/questions/17336943/removing-non-numeric-characters-from-a-string}
+
